@@ -74,10 +74,8 @@ Vagrant.configure("2") do |config|
      cd /opt/esp-open-sdk
      make
 
-
      git clone https://github.com/nodemcu/nodemcu-firmware.git /opt/nodemcu-firmware
      cd /opt/nodemcu-firmware/
      make
-
   SHELL
 end
