@@ -71,11 +71,13 @@ Vagrant.configure("2") do |config|
      apt-get install -yq make unrar-free autoconf automake libtool gcc g++ gperf flex bison texinfo gawk ncurses-dev libexpat-dev python-dev python python-serial sed git unzip bash help2man wget bzip2
      apt-get install libtool-bin
      git clone https://github.com/pfalcon/esp-open-sdk.git /opt/esp-open-sdk
+     chown ubuntu:ubuntu -R /opt/esp-open-sdk
      cd /opt/esp-open-sdk
-     make
+     sudo -u ubuntu make
 
      git clone https://github.com/nodemcu/nodemcu-firmware.git /opt/nodemcu-firmware
      cd /opt/nodemcu-firmware/
-     make
+     chown ubuntu:ubuntu -R /opt/nodemcu-firmware
+     sudo -u ubuntu make
   SHELL
 end
