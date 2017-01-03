@@ -79,7 +79,6 @@ Vagrant.configure("2") do |config|
      cd /opt/nodemcu-firmware/
      chown ubuntu:ubuntu -R /opt/nodemcu-firmware
      sudo -u ubuntu make
-
-     echo "PATH=/opt/esp-open-sdk/xtensa-lx106-elf/bin:\$PATH" | tee /home/ubuntu/.profile
+     echo "PATH=/opt/esp-open-sdk/xtensa-lx106-elf/bin:\$PATH" | tee ~/.profile
   SHELL
 end
