@@ -68,6 +68,6 @@ Vagrant.configure("2") do |config|
      apt-get update
      apt-get upgrade -yq
      apt-get install -yq curl
-     sudo -u ubuntu curl https://raw.githubusercontent.com/lucciano/nodemcu-vm/master/nodemcu.sh | sh
+     curl https://raw.githubusercontent.com/lucciano/nodemcu-vm/master/nodemcu.sh | sudo -u ubuntu sh
   SHELL
 end
