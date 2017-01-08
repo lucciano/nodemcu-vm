@@ -10,7 +10,7 @@ git clone https://github.com/pfalcon/esp-open-sdk.git ~/esp-open-sdk
 cd ~/esp-open-sdk
 make
 export PATH=/opt/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
+echo "PATH=$HOME/esp-open-sdk/xtensa-lx106-elf/bin:\$PATH" | tee ~/.profile
 git clone https://github.com/nodemcu/nodemcu-firmware.git ~/nodemcu-firmware
 cd ~/nodemcu-firmware/
 make
-echo "PATH=$HOME/esp-open-sdk/xtensa-lx106-elf/bin:\$PATH" | tee ~/.profile
